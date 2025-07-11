@@ -1,0 +1,22 @@
+[package]
+name = "week3"
+version = "0.1.0"
+edition = "2024_07"
+
+[cairo]
+enable-gas = false
+
+[dependencies]
+cairo_execute = "2.11.4"
+starknet = ">=2.11.4"
+
+
+[[target.executable]]
+name = "main"
+function = "week3::main"
+
+
+
+[[target.starknet-contract]]
+sierra = true
+casm = true
